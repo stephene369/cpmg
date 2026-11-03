@@ -2,6 +2,7 @@
 import { Link } from "react-router";
 import { activities } from "../data/activities";
 import { getWhatsAppLink } from "../data/config";
+import { renderPage } from "./render";
 
 export default function Home() {
   return (
@@ -128,3 +129,6 @@ export default function Home() {
     </>
   );
 }
+
+
+renderPage(Home);
