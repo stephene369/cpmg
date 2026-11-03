@@ -1,4 +1,5 @@
 import { activities } from "../data/activities";
+import { renderPage } from "./render";
 
 export default function Gallery() {
   return (
