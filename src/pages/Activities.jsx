@@ -1,6 +1,6 @@
-
 import { activities } from "../data/activities";
 import { getWhatsAppLink } from "../data/config";
+import { renderPage } from "./render";
 
 export default function Activities() {
   return (
@@ -49,3 +49,5 @@ export default function Activities() {
     </>
   );
 }
+
+renderPage(Activities);

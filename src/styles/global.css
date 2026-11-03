@@ -541,3 +541,17 @@
     }
   }
   
+  .nav-links > a:not(.btn) {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #262b27;
+  }
+  
+  .nav-links > a.active:not(.btn) {
+    color: #285943;
+    border-bottom: 2px solid #285943;
+  }
+  
+  .nav-links > a:not(.btn):hover {
+    color: #285943;
+  }

@@ -1,5 +1,5 @@
-
 import { cooperative, getWhatsAppLink } from "../data/config";
+import { renderPage } from "./render";
 
 export default function Contact() {
   return (
@@ -66,3 +66,5 @@ export default function Contact() {
     </>
   );
 }
+
+renderPage(Contact);

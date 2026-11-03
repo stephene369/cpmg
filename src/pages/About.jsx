@@ -1,5 +1,5 @@
-
 import { cooperative } from "../data/config";
+import { renderPage } from "./render";
 
 export default function About() {
   return (
@@ -80,3 +80,5 @@ export default function About() {
     </>
   );
 }
+
+renderPage(About);

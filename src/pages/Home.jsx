@@ -1,5 +1,3 @@
-
-import { Link } from "react-router";
 import { activities } from "../data/activities";
 import { getWhatsAppLink } from "../data/config";
 import { renderPage } from "./render";
@@ -27,9 +25,9 @@ export default function Home() {
             </p>
 
             <div className="hero-actions">
-              <Link to="/activites" className="btn btn-primary">
+              <a href="/activites/" className="btn btn-primary">
                 Découvrir nos activités
-              </Link>
+              </a>
 
               <a
                 href={getWhatsAppLink(
@@ -46,7 +44,7 @@ export default function Home() {
 
           <img
             className="hero-image"
-            src="/images/porcs.jpg"
+            src="/images/porcs.svg"
             alt="Élevage porcin"
           />
         </div>
@@ -69,9 +67,9 @@ export default function Home() {
               pratiques d'élevage organisées et
               adaptées aux réalités locales.
             </p>
-            <Link to="/a-propos" className="text-link">
+            <a href="/a-propos/" className="text-link">
               En savoir plus →
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -98,9 +96,9 @@ export default function Home() {
           </div>
 
           <div className="section-action">
-            <Link to="/activites" className="btn btn-primary">
+            <a href="/activites/" className="btn btn-primary">
               Toutes nos activités
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -108,6 +106,8 @@ export default function Home() {
       <section className="cta-section">
         <div className="container cta-content">
           <div>
+
+
             <h2>Vous souhaitez échanger avec nous ?</h2>
             <p>
               Pour toute demande d'information ou de
@@ -129,6 +129,5 @@ export default function Home() {
     </>
   );
 }
-
 
 renderPage(Home);

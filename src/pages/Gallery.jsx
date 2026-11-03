@@ -1,4 +1,3 @@
-
 import { activities } from "../data/activities";
 
 export default function Gallery() {
@@ -34,3 +33,5 @@ export default function Gallery() {
     </>
   );
 }
+
+renderPage(Gallery);
